@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Качалов](https://up.htmlacademy.ru/adaptive/13/user/235268).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий Походня.
 
 ---
 
