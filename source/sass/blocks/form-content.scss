@@ -5,6 +5,7 @@
 .form-content__description {
   margin: 0;
   margin-bottom: 30px;
+
   @include main-text(13px, 24px);
 }
 

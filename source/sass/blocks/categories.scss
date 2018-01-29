@@ -15,12 +15,14 @@
   justify-content: space-between;
   align-items: center;
   background-color: $style-color-light;
+
   &:nth-child(even) {
     background-color: $style-color-dark;
     // background-color: #56c3b2;
   }
+
   &::after {
-    content: 'img';
+    content: "img";
   }
 }
 

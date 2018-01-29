@@ -8,6 +8,7 @@
   margin: 0 30px;
   margin-bottom: 30px;
   padding-left: 60px;
+
   @include stront-text(17px, 24px);
 }
 
@@ -20,6 +21,7 @@
 .video-block__description {
   margin: 0 30px;
   margin-bottom: 30px;
+
   @include main-text(13px, 24px);
 }
 

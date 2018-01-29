@@ -12,13 +12,14 @@
 
 .product-card__title {
   margin: 0;
+
   @include stront-text(17px, 24px);
 }
 
 .product-card__description {
   margin: 0;
-  @include main-text(13px, 30px);
 
+  @include main-text(13px, 30px);
 }
 
 .product-card__buy-wrapper {
@@ -30,5 +31,6 @@
 
 .product-card__price {
   margin: 0;
+
   @include stront-text(15px, 24px);
 }
