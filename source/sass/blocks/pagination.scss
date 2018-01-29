@@ -1,0 +1,22 @@
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__button {
+  width: 130px;
+  height: 50px;
+
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+
+.pagination__button_prev {
+  border-right: none;
+}
+
+.pagination__button_next {
+
+}
+

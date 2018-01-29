@@ -1,0 +1,29 @@
+
+.product-properties {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+
+  border-collapse: collapse;
+}
+
+.product-properties__item {
+  height: 40px;
+
+}
+
+.product-properties__propertie-name {
+  min-height: 40px;
+  border-bottom: 1px solid #ececec;
+  min-width: 100px;
+}
+
+.product-properties__propertie-value {
+  min-height: 40px;
+  border-bottom: 1px solid #ececec;
+  min-width: 160px;
+}
+

@@ -1,0 +1,36 @@
+
+.categories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.categories__item {
+  padding: 30px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #63d1bb;
+  &:nth-child(even) {
+    background-color: #56c3b2;
+  }
+  &::after {
+    content: 'img';
+  }
+}
+
+.categories__link {
+  width: 130px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+
+.reviews {
+  padding: 30px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.reviews__pagination {
+  margin-bottom: 40px;
+}
