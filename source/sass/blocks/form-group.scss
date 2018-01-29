@@ -1,0 +1,14 @@
+
+.form-group {
+  margin: 0;
+  padding: 30px 0;
+  border: none;
+  border-top: 1px solid $style-color-light;
+}
+
+.form-group__title {
+  min-width: 60px;
+  @include stront-text(17px, 20px);
+  color: $style-color-light;
+  text-transform: uppercase;
+}

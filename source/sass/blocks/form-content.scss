@@ -1,0 +1,17 @@
+.form-content__container {
+  padding: 30px;
+}
+
+.form-content__description {
+  margin: 0;
+  margin-bottom: 30px;
+  @include main-text(13px, 24px);
+}
+
+.form-content_form-note {
+  @include main-text(14px, 16px);
+}
+
+.form-content__order-form {
+  margin-bottom: 30px;
+}
