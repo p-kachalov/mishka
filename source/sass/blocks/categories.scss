@@ -14,9 +14,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $style-color;
+  background-color: $style-color-light;
   &:nth-child(even) {
-    background-color: desaturate($color: $style-color, $amount: 15%);
+    background-color: $style-color-dark;
     // background-color: #56c3b2;
   }
   &::after {

@@ -17,7 +17,7 @@
   margin-bottom: 30px;
 
   @include stront-text(17px, 20px);
-  color: $style-color;
+  color: $style-color-light;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@
   font-size: 15px;
   line-height: 24px;
   text-decoration: none;
-  color: $main-gray-color;
+  color: $gray-color-dark;
 }
 
 .popular-product__product-properties {

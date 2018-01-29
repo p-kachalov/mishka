@@ -2,10 +2,10 @@
 .button {
   display: block;
   padding: 20px;
-  border: 2px solid $main-gray-color;
+  border: 2px solid $gray-color-dark;
   text-align: center;
 
   @include stront-text(17px, 20px);
-  color: $main-gray-color;
+  color: $gray-color-dark;
   text-transform: uppercase;
 }

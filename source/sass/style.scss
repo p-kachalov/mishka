@@ -17,10 +17,13 @@
   font-style: normal;
 }
 
+$main-backgound-color: #ffffff;
+$add-backgound-color: #f1f1f1;
 
-$main-gray-color: #444444;
-$light-gray-color: #ececec;
-$style-color: #63d1bb;
+$gray-color-dark: #444444;
+$gray-color-light: #ececec;
+$style-color-light: #63d1bb;
+$style-color-dark: #56c3b2;
 
 @import 'mixin';
 
@@ -33,6 +36,7 @@ $style-color: #63d1bb;
 @import 'blocks/main-nav';
 
 @import 'blocks/front-header';
+@import 'blocks/main-content';
 @import 'blocks/categories';
 @import 'blocks/popular-product';
 @import 'blocks/product-properties';
@@ -47,13 +51,16 @@ $style-color: #63d1bb;
 @import 'blocks/social-bar';
 @import 'blocks/copyright';
 
-
-
-
 @import 'blocks/inner-header';
-
-@import 'blocks/main-content';
 @import 'blocks/catalog-content';
+@import 'blocks/catalog';
+@import 'blocks/product-card';
+@import 'blocks/video-block';
+
+
+
+
+
 @import 'blocks/form-content';
 
 

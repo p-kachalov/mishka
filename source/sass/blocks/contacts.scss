@@ -28,7 +28,7 @@
 }
 
 .contacts__email-link {
-  border-bottom: 1px solid $style-color;
+  border-bottom: 1px solid $style-color-light;
 
   @include main-text(15px, 30px);
 }
