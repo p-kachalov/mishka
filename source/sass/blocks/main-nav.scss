@@ -11,16 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $light-gray-color;
 }
 
 .main-nav__link {
-  margin-left: 45px;
-  margin-right: auto;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #000000;
+  @include stront-text(17px, 24px);
 }

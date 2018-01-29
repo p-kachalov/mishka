@@ -11,25 +11,15 @@
   margin: 0;
   margin-bottom: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #000000;
+  @include stront-text(18px, 30px);
 }
 
 .contacts__email,
 .contacts__address {
   margin-bottom: 40px;
-
   display: flex;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #444444;
+
+  @include main-text(15px, 30px);
 }
 
 .contacts__email-tag,
@@ -38,15 +28,9 @@
 }
 
 .contacts__email-link {
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $style-color;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #444444;
-
+  @include main-text(15px, 30px);
 }
 
 .contacts__address-value {

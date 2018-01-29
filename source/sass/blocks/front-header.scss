@@ -21,12 +21,6 @@
   margin-bottom: 90px;
   padding: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
+  @include stront-text(27px, 30px);
 
 }

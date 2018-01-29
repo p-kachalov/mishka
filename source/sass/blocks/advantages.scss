@@ -9,12 +9,7 @@
   padding: 0;
   margin-bottom: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none;
-  color: #000000;
+  @include stront-text(17px, 20px);
 
   &::before {
     content: 'img';

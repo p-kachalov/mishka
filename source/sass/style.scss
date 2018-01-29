@@ -17,6 +17,13 @@
   font-style: normal;
 }
 
+
+$main-gray-color: #444444;
+$light-gray-color: #ececec;
+$style-color: #63d1bb;
+
+@import 'mixin';
+
 @import 'blocks/container';
 @import 'blocks/visually-hidden';
 

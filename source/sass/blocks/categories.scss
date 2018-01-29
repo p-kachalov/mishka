@@ -14,9 +14,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #63d1bb;
+  background-color: $style-color;
   &:nth-child(even) {
-    background-color: #56c3b2;
+    background-color: desaturate($color: $style-color, $amount: 15%);
+    // background-color: #56c3b2;
   }
   &::after {
     content: 'img';
@@ -26,11 +27,7 @@
 .categories__link {
   width: 130px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  text-decoration: none;
+  @include stront-text(19px, 24px);
   color: #ffffff;
   text-align: center;
 }

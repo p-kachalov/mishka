@@ -1,11 +1,6 @@
 
 .product-properties {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  text-decoration: none;
-  color: #444444;
+  @include main-text(15px, 20px);
 
   border-collapse: collapse;
 }
@@ -17,13 +12,13 @@
 
 .product-properties__propertie-name {
   min-height: 40px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $light-gray-color;
   min-width: 100px;
 }
 
 .product-properties__propertie-value {
   min-height: 40px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $light-gray-color;
   min-width: 160px;
 }
 

@@ -9,14 +9,10 @@
   height: 50px;
 
   background-color: #ffffff;
-  border: 1px solid #ececec;
+  border: 1px solid $light-gray-color;
 }
 
 .pagination__button_prev {
   border-right: none;
-}
-
-.pagination__button_next {
-
 }
 

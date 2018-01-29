@@ -7,10 +7,5 @@
   padding: 0;
   margin-bottom: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #000000;
+  @include stront-text(25px, 30px);
 }

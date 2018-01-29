@@ -8,12 +8,7 @@
   padding: 0;
   margin-bottom: 10px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #000000;
+  @include stront-text(25px, 30px);
 }
 
 .popular-product__tag {
@@ -21,12 +16,8 @@
   padding: 0;
   margin-bottom: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none;
-  color: #63d1bb;
+  @include stront-text(17px, 20px);
+  color: $style-color;
   text-transform: uppercase;
 }
 
@@ -40,7 +31,7 @@
   font-size: 15px;
   line-height: 24px;
   text-decoration: none;
-  color: #444444;
+  color: $main-gray-color;
 }
 
 .popular-product__product-properties {
@@ -57,11 +48,6 @@
 .popular-product__price {
   text-align: center;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #444444;
+  @include stront-text(17px, 24px);
 }
 
