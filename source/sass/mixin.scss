@@ -10,7 +10,7 @@
 }
 
 // @include stront-text(15px, 30px);
-@mixin stront-text($font-size, $line-height) {
+@mixin strong-text($font-size, $line-height) {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-style: normal;
