@@ -48,5 +48,5 @@
 .popular-product__price {
   text-align: center;
 
-  @include strong-text(17px, 24px);
+  @include strong-text(17px, 24px, #444444);
 }
