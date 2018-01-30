@@ -1,0 +1,10 @@
+.checkbox {
+  min-height: 40px;
+}
+
+.checkbox__label {
+  display: block;
+  padding-left: 60px;
+
+  @include stront-text(17px, 18px);
+}
