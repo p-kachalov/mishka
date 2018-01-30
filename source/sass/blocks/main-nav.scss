@@ -20,7 +20,7 @@
 .main-nav__link {
   padding-left: 45px;
 
-  @include stront-text(17px, 24px);
+  @include strong-text(17px, 24px);
 
   &.main-nav__link_search::before {
     content: "";

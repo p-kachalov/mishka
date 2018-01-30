@@ -8,7 +8,7 @@
   padding: 0;
   margin-bottom: 10px;
 
-  @include stront-text(25px, 30px);
+  @include strong-text(25px, 30px);
 }
 
 .popular-product__tag {
@@ -16,7 +16,7 @@
   padding: 0;
   margin-bottom: 30px;
 
-  @include stront-text(17px, 20px);
+  @include strong-text(17px, 20px);
   color: $style-color-light;
   text-transform: uppercase;
 }
@@ -48,5 +48,5 @@
 .popular-product__price {
   text-align: center;
 
-  @include stront-text(17px, 24px);
+  @include strong-text(17px, 24px);
 }

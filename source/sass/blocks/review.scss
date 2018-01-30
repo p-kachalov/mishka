@@ -14,7 +14,7 @@
 .review__author-name {
   margin: 0;
 
-  @include stront-text(17px, 24px);
+  @include strong-text(17px, 24px);
 }
 
 .review__author-nickname {

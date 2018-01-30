@@ -9,7 +9,7 @@
   padding: 0;
   margin-bottom: 30px;
 
-  @include stront-text(17px, 20px);
+  @include strong-text(17px, 20px);
 
   &::before {
     content: "img";
