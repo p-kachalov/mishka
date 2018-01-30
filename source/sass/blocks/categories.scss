@@ -18,11 +18,28 @@
 
   &:nth-child(even) {
     background-color: $style-color-dark;
-    // background-color: #56c3b2;
   }
 
-  &::after {
-    content: "img";
+  &.categories__item_interior::after {
+    content: "";
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 30px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &.categories__item_toy::after {
+    content: "";
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 30px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
