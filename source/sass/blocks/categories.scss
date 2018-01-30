@@ -1,0 +1,35 @@
+
+.categories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.categories__item {
+  padding: 30px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $style-color-light;
+
+  &:nth-child(even) {
+    background-color: $style-color-dark;
+    // background-color: #56c3b2;
+  }
+
+  &::after {
+    content: "img";
+  }
+}
+
+.categories__link {
+  width: 130px;
+
+  @include stront-text(19px, 24px);
+  color: #ffffff;
+  text-align: center;
+}

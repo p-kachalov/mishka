@@ -1,0 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__content {
+  @include stront-text(18px, 30px);
+}

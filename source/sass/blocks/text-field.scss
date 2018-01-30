@@ -1,0 +1,10 @@
+.text-field {
+  min-height: 40px;
+}
+
+.text-field__label {
+  display: block;
+  margin-bottom: 20px;
+
+  @include stront-text(17px, 18px);
+}

@@ -1,0 +1,22 @@
+
+.reviews {
+  padding: 30px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include stront-text(25px, 30px);
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.reviews__pagination {
+  margin-bottom: 40px;
+}

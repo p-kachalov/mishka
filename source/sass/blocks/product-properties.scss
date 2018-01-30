@@ -1,0 +1,22 @@
+
+.product-properties {
+  @include main-text(15px, 20px);
+
+  border-collapse: collapse;
+}
+
+.product-properties__item {
+  height: 40px;
+}
+
+.product-properties__propertie-name {
+  min-height: 40px;
+  border-bottom: 1px solid $gray-color-light;
+  min-width: 100px;
+}
+
+.product-properties__propertie-value {
+  min-height: 40px;
+  border-bottom: 1px solid $gray-color-light;
+  min-width: 160px;
+}

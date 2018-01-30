@@ -1,0 +1,13 @@
+.catalog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}

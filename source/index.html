@@ -4,37 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="main-nav">
     <div class="container">
-      <div class="main-nav__nav-header">
+      <div class="main-nav__item">
         <a class="logo main-nav__logo">
-          <img class="logo__image" src="https://place-hold.it/120x50" alt="Логотип магазина Мишка">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина Мишка">
         </a>
         <button class="main-nav__menu-togler">x</button>
       </div>
 
-      <ul class="main-menu main-nav__main-menu">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Каталог товаров</a>
+      <ul class="main-nav__menu-list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Вязание на заказ</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/form.html">Вязание на заказ</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Поиск по сайту</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Корзина: пока пуста</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <header class="front-header">
-    <div class="container">
+    <div class="container front-header__container">
       <h1 class="visually-hidden">Магазин Мишка</h1>
       <p class="front-header__lead">Милые штуки ручной работы для дома</p>
       <ul class="categories">
@@ -72,7 +73,7 @@
           </tr>
         </table>
 
-        <img class="popular-product__image" src="https://place-hold.it/260x315" alt="Фотография трех оригинальных вязанных корзин разного размера">
+        <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Фотография трех оригинальных вязанных корзин разного размера">
         <p class="popular-product__price">Цена: 990 руб.</p>
         <a class="button" href="#">Заказать</a>
       </section>
@@ -107,31 +108,35 @@
           </li>
         </ul>
         <div class="pagination reviews__pagination">
-          <button class="pagination__prev-button" type="button">Предыдущий</button>
-          <button class="pagination__next-button" type="button">Следующий</button>
+          <button class="pagination__button pagination__button_prev" type="button">Предыдущий</button>
+          <button class="pagination__button pagination__button_next" type="button">Следующий</button>
         </div>
         <a class="button" href="#">Написать</a>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__email">
-          <span class="contacts__email-tag">e-mail:</span>
-          <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-        <p class="contacts__address">
-          <span class="contacts__address-tag">адрес:</span>
-          <span class="contacts__address-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-        </p>
-        <img class="map contacts__map" src="https://place-hold.it/320x460" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <a class="button" href="#">Напишите нам</a>
+        <div class="container contacts__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">
+            <span class="contacts__email-tag">e-mail:</span>
+            <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </p>
+          <p class="contacts__address">
+            <span class="contacts__address-tag">адрес:</span>
+            <span class="contacts__address-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          </p>
+        </div>
+        <img class="map contacts__map" src="img/map-mobile@1x.jpg" width="320px" height="460px" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <div class="container contacts__container">
+          <a class="button" href="#">Напишите нам</a>
+        </div>
       </section>
     </div>
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-      <div class="social-bar">
+    <div class="container page-footer__container">
+      <div class="social-bar page-footer__social-bar">
         <ul class="social-bar__list">
           <li class="social-bar__item">
             <a class="social-bar__link" href="#">Instagram</a>

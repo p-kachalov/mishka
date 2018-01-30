@@ -1,0 +1,15 @@
+
+.inner-header {
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $add-backgound-color;
+
+  padding: 30px;
+}
+
+.inner-header__title {
+  @include stront-text(27px, 30px);
+}

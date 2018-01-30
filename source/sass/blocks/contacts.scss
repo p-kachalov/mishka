@@ -1,0 +1,42 @@
+
+.contacts {
+  padding: 30px 0;
+}
+
+.contacts__container {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include stront-text(18px, 30px);
+}
+
+.contacts__email,
+.contacts__address {
+  margin-bottom: 40px;
+  display: flex;
+
+  @include main-text(15px, 30px);
+}
+
+.contacts__email-tag,
+.contacts__address-tag {
+  min-width: 75px;
+}
+
+.contacts__email-link {
+  border-bottom: 1px solid $style-color-light;
+
+  @include main-text(15px, 30px);
+}
+
+.contacts__address-value {
+  display: block;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}

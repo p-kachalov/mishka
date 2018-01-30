@@ -4,30 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="main-nav">
     <div class="container">
-      <div class="main-nav__nav-header">
-        <a class="logo main-nav__logo" href="#">
-          <img class="logo__image" src="https://place-hold.it/120x50" alt="Логотип магазина Мишка">
+      <div class="main-nav__item">
+        <a class="logo main-nav__logo" href="/">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина Мишка">
         </a>
         <button class="main-nav__menu-togler">x</button>
       </div>
 
-      <ul class="main-menu main-nav__main-menu">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Каталог товаров</a>
+      <ul class="main-nav__menu-list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Каталог товаров</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Вязание на заказ</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Поиск по сайту</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Корзина: пока пуста</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </div>
@@ -40,11 +41,11 @@
   </header>
 
   <main class="form-content">
-    <div class="container">
-      <p class="form-description">
+    <div class="container form-content__container">
+      <p class="form-content__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="order-form form-content__order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form-group order-form__form-group">
           <legend class="form-group__title">Тип</legend>
           <div class="radio">
@@ -128,10 +129,10 @@
 
         <fieldset class="form-group order-form__form-group">
           <legend class="form-group__title">Доп</legend>
-          <textarea class="textarea" rows="10" cols="60" placeholder="Опишите все ваши пожелания к заказу">
+          <textarea class="textarea" rows="10" cols="33" placeholder="Опишите все ваши пожелания к заказу">
           </textarea>
         </fieldset>
-        <p class="form-note">*Поля обязательны для заполнения</p>
+        <p class="form-content_form-note">*Поля обязательны для заполнения</p>
         <button class="button" type="submit">Отправить Заказ</button>
       </form>
     </div>
