@@ -1,11 +1,9 @@
 
 .button {
   display: block;
-  width: 100%;
   padding: 20px;
   border: 2px solid $gray-color-dark;
   text-align: center;
-
   background-color: $main-backgound-color;
 
   @include strong-text(17px, 20px);
