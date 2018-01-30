@@ -17,3 +17,23 @@
 .main-nav__link {
   @include stront-text(17px, 24px);
 }
+
+.main-nav__menu-togler {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 40px;
+  background-color: $main-backgound-color;
+  border: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.main-nav__menu-togler_open {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &.main-nav__menu-togler_close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}
