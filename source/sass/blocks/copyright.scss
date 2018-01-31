@@ -5,4 +5,14 @@
 
 .copyright__content {
   @include strong-text(18px, 30px);
+  display: flex;
+}
+
+.copyright__logo {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/htmlacademy.svg");
 }
