@@ -12,9 +12,35 @@
   @include strong-text(17px, 20px);
 
   &::before {
-    content: "img";
+    content: "";
     display: block;
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &.advantages__item_flower::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &.advantages__item_money::before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &.advantages__item_heart::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &.advantages__item_ball::before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &.advantages__item_rocket::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &.advantages__item_gift::before {
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }
