@@ -14,4 +14,13 @@
 
 .pagination__button_prev {
   border-right: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.pagination__button_next {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/icon-right-arrow.svg");
 }
