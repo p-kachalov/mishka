@@ -10,25 +10,25 @@
 <body>
   <nav class="main-nav">
     <div class="container">
-      <div class="main-nav__item">
-        <a class="logo main-nav__logo" href="/">
+      <div class="main-nav__item main-nav__item_logo">
+        <a class="logo">
           <img class="logo__image" src="img/logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина Мишка">
         </a>
-        <button class="main-nav__menu-togler">x</button>
+        <button class="main-nav__menu-togler main-nav__menu-togler_close"></button>
       </div>
 
       <ul class="main-nav__menu-list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="">Каталог товаров</a>
+          <a class="main-nav__link">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="/form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Поиск по сайту</a>
+          <a class="main-nav__link main-nav__link_search" href="#">Поиск по сайту</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          <a class="main-nav__link main-nav__link_cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </div>
@@ -100,25 +100,32 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-      <div class="social-bar">
+    <div class="container page-footer__container">
+      <div class="social-bar page-footer__social-bar">
         <ul class="social-bar__list">
           <li class="social-bar__item">
-            <a class="social-bar__link" href="#">Instagram</a>
+            <a class="social-bar__link social-bar__link_instagram" href="https://www.instagram.com">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
           <li class="social-bar__item">
-            <a class="social-bar__link" href="#">Facebook</a>
+            <a class="social-bar__link social-bar__link_facebook" href="https://www.facebook.com">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
           <li class="social-bar__item">
-            <a class="social-bar__link" href="#">Twitter</a>
+            <a class="social-bar__link social-bar__link_twitter" href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="copyright">
         <p class="copyright__content">Разработано
-          <span class="copyright__logo">html Academy</span>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">html Academy</span>
+          </a>
         </p>
       </div>
-    </div>
   </footer>
 </body>
