@@ -18,14 +18,9 @@
   font-style: normal;
 }
 
-$main-backgound-color: #ffffff;
-$add-backgound-color: #f1f1f1;
-$gray-color-dark: #444444;
-$gray-color-light: #ececec;
-$style-color-light: #63d1bb;
-$style-color-dark: #56c3b2;
-
+@import "variavles";
 @import "mixin";
+@import "scaffolding";
 @import "blocks/container";
 @import "blocks/visually-hidden";
 @import "blocks/logo";

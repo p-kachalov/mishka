@@ -1,5 +1,5 @@
 // @include main-text(15px, 30px);
-@mixin main-text($font-size, $line-height, $color: #444444) {
+@mixin main-text($font-size: 15px, $line-height: 30px, $color: #444444) {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -10,7 +10,7 @@
 }
 
 // @include stront-text(15px, 30px);
-@mixin strong-text($font-size, $line-height, $color: #000000) {
+@mixin strong-text($font-size: 25px, $line-height: 30px, $color: #000000) {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-style: normal;
