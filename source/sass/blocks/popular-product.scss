@@ -98,16 +98,17 @@
     right: 0;
     width: 334px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .popular-product__container {
     min-height: 635px;
   }
+
   .popular-product {
     padding: 75px 50px;
   }
+
   .popular-product__header {
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -135,5 +136,4 @@
   .popular-product__image {
     width: 525px;
   }
-
 }
