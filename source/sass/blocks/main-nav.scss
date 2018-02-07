@@ -106,9 +106,10 @@
   .main-nav__menu-list {
     display: flex;
     padding: 0 50px;
+    order: 1;
 
     &.main-nav__menu-list_catalog-and-order {
-      order: 1;
+      order: 2;
       background: transparent;
     }
     &.main-nav__menu-list_search-and-cart {
@@ -131,6 +132,7 @@
       background-color: $main-backgound-color;
       justify-content: flex-start;
       flex-grow: 1;
+      order: 1;
     }
     &.main-nav__item_search {
       min-width: 25px;
@@ -167,5 +169,37 @@
     margin: -1px;
     padding: 0;
     border: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__menu-list {
+    &.main-nav__menu-list_catalog-and-order {
+      order: 0;
+      border-bottom: 1px solid $gray-color-light;
+      background-color: $main-backgound-color;
+    }
+    &.main-nav__menu-list_new-and-sale {
+      display: flex;
+      order: 2;
+    }
+  }
+  .main-nav__item {
+    min-width: 184px;
+    padding-left: 30px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &.main-nav__item_search {
+      padding: 0 30px;
+    }
+    &.main-nav__item_logo {
+      padding: 0;
+      justify-content: center;
+    }
+    &.main-nav__item_catalog {
+      border-right: 1px solid $gray-color-light;
+    }
   }
 }
