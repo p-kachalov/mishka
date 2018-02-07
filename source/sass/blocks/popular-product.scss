@@ -29,12 +29,7 @@
   padding: 0;
   margin-bottom: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  text-decoration: none;
-  color: $gray-color-dark;
+  @include main-text(15px, 24px);
 }
 
 .popular-product__product-properties {
@@ -88,6 +83,10 @@
     width: 290px;
   }
 
+  .popular-product__description {
+    @include main-text(17px, 30px);
+  }
+
   .popular-product__order-panel {
     width: 290px;
   }
@@ -129,6 +128,7 @@
   }
 
   .popular-product__order-panel {
+    margin-top: auto;
     margin-left: 175px;
   }
 
