@@ -1,15 +1,38 @@
 
 .inner-header {
-  min-height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: $add-backgound-color;
+}
 
-  padding: 30px;
+.inner-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .inner-header__title {
+  min-width: 240px;
+  min-height: 110px;
+  padding: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @include strong-text(27px, 30px);
+}
+
+@media (min-width: $tablet-width) {
+  .inner-header__title {
+    min-height: 110px;
+
+    @include strong-text(43px, 50px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-header__title {
+    min-height: 140px;
+
+    @include strong-text(53px, 57px);
+  }
 }
