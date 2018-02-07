@@ -25,3 +25,28 @@
 
   @include strong-text(27px, 30px);
 }
+
+@media (min-width: $tablet-width) {
+  .front-header__container {
+    min-height: 830px;
+  }
+
+  .front-header__lead {
+    width: 520px;
+    margin: 0 auto;
+
+    @include strong-text(43px, 50px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .front-header__container {
+    min-height: 830px;
+  }
+
+  .front-header__lead {
+    width: 700px;
+
+    @include strong-text(53px, 57px);
+  }
+}

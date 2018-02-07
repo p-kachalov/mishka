@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $style-color-light;
+  position: relative;
 
   &:nth-child(even) {
     background-color: $style-color-dark;
@@ -46,4 +47,19 @@
   @include strong-text(19px, 24px);
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    padding: 0 50px;
+    display: flex;
+  }
+
+  .categories__item {
+    flex-grow: 1;
+  }
+
+  .categories__link {
+    @include strong-text(20px, 30px);
+  }
 }
