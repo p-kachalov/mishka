@@ -1,5 +1,5 @@
-
-.about {
+.about__container {
+  min-width: 260px;
   padding: 30px;
 }
 
@@ -9,4 +9,26 @@
   margin-bottom: 30px;
 
   @include strong-text(25px, 30px);
+}
+
+@media (min-width: $tablet-width) {
+  .about__container {
+    padding: 50px;
+    width: 668px;
+  }
+
+  .about__title {
+    @include strong-text(43px, 50px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding: 50px 225px;
+    width: 700px;
+  }
+
+  .about__title {
+    @include strong-text(53px, 57px);
+  }
 }
