@@ -48,16 +48,31 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    height: 400px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .advantages__item {
     width: 300px;
 
     @include strong-text(20px, 22px);
+
+    &.advantages__item_money {
+      order: 1;
+    }
+
+    &.advantages__item_rocket {
+      order: 1;
+    }
+
+    &.advantages__item_heart {
+      order: 2;
+    }
+
+    &.advantages__item_gift {
+      order: 2;
+    }
   }
 }
 
