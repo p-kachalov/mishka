@@ -1,33 +1,7 @@
-@font-face {
-  font-family: "Open Sans";
-  src: local("Open Sans"),
-    local("OpenSans"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Open Sans";
-  src: local("Open Sans Bold"),
-    local("OpenSansBold"),
-    url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-$main-backgound-color: #ffffff;
-$add-backgound-color: #f1f1f1;
-$gray-color-dark: #444444;
-$gray-color-light: #ececec;
-$style-color-light: #63d1bb;
-$style-color-dark: #56c3b2;
-
-@import "mixin";
-@import "blocks/container";
-@import "blocks/visually-hidden";
+@import "variables";
+@import "mixins";
+@import "scaffolding";
 @import "blocks/logo";
 @import "blocks/button";
 @import "blocks/main-nav";
@@ -48,9 +22,12 @@ $style-color-dark: #56c3b2;
 @import "blocks/catalog-content";
 @import "blocks/catalog";
 @import "blocks/product-card";
+@import "blocks/cart-button";
 @import "blocks/video-block";
 @import "blocks/form-content";
+@import "blocks/order-form";
 @import "blocks/form-group";
 @import "blocks/radio";
 @import "blocks/checkbox";
 @import "blocks/text-field";
+@import "blocks/textarea";

@@ -1,6 +1,10 @@
-
-.popular-product {
+.popular-product__container {
+  min-width: 260px;
   padding: 30px;
+}
+
+.popular-product__header {
+  margin-bottom: 30px;
 }
 
 .popular-product__title {
@@ -8,15 +12,14 @@
   padding: 0;
   margin-bottom: 10px;
 
-  @include stront-text(25px, 30px);
+  @include strong-text(25px, 30px);
 }
 
 .popular-product__tag {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
 
-  @include stront-text(17px, 20px);
+  @include strong-text(17px, 20px);
   color: $style-color-light;
   text-transform: uppercase;
 }
@@ -26,12 +29,7 @@
   padding: 0;
   margin-bottom: 30px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  text-decoration: none;
-  color: $gray-color-dark;
+  @include main-text(15px, 24px);
 }
 
 .popular-product__product-properties {
@@ -48,5 +46,92 @@
 .popular-product__price {
   text-align: center;
 
-  @include stront-text(17px, 24px);
+  @include strong-text(17px, 24px, #444444);
+}
+
+@media (min-width: $tablet-width) {
+  .popular-product__container {
+    padding: 50px;
+    min-height: 410px;
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popular-product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .popular-product__title {
+    @include strong-text(43px, 50px);
+  }
+
+  .popular-product__tag {
+    width: 75px;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  .popular-product__data {
+    width: 290px;
+  }
+
+  .popular-product__description {
+    @include main-text(17px, 30px);
+  }
+
+  .popular-product__order-panel {
+    width: 290px;
+  }
+
+  .popular-product__image {
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-product__container {
+    min-height: 635px;
+    width: 1050px;
+    padding: 50;
+    padding-top: 120px;
+  }
+
+  .popular-product__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 70px;
+    z-index: 1;
+  }
+
+  .popular-product__title {
+    @include strong-text(53px, 57px);
+  }
+
+  .popular-product__tag {
+    padding: 0 50px;
+  }
+
+  .popular-product__data {
+    margin-left: 175px;
+  }
+
+  .popular-product__order-panel {
+    margin-top: auto;
+    margin-left: 175px;
+  }
+
+  .popular-product__image {
+    width: 525px;
+  }
 }

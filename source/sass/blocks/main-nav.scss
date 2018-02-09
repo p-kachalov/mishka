@@ -1,19 +1,215 @@
+.main-nav {
+  display: block;
+  background-color: $main-backgound-color;
+}
+
+.main-nav__menu-togler {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 40px;
+  background-color: $main-backgound-color;
+  border: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.main-nav__menu-togler_open {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &.main-nav__menu-togler_close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}
 
 .main-nav__menu-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: block;
+
+  &.main-nav__menu-list_new-and-sale {
+    display: none;
+  }
 }
 
 .main-nav__item {
-  padding: 10px 30px;
-  min-height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 30px;
+  min-height: 79px;
+  min-width: 260px;
+  border: none;
   border-bottom: 1px solid $gray-color-light;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &.main-nav__item_logo {
+    justify-content: center;
+    position: relative;
+  }
+
+  &.main-nav__item_delivery {
+    display: none;
+  }
 }
 
 .main-nav__link {
-  @include stront-text(17px, 24px);
+  padding-left: 45px;
+  position: relative;
+  display: block;
+  min-height: 30px;
+
+  @include strong-text(17px, 24px);
+
+  &.main-nav__link_delivery {
+    @include main-text(15px, 24px);
+  }
+
+  &.main-nav__link_search::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &.main-nav__link_cart::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .main-nav__menu-togler {
+    display: none;
+  }
+
+  .main-nav__menu-list {
+    display: flex;
+    padding: 0 50px;
+    order: 1;
+
+    &.main-nav__menu-list_catalog-and-order {
+      order: 2;
+      background: transparent;
+    }
+
+    &.main-nav__menu-list_search-and-cart {
+      min-height: 89px;
+      border-bottom: 1px solid $gray-color-light;
+      background-color: $main-backgound-color;
+    }
+  }
+
+  .main-nav__item {
+    padding: 0;
+    min-width: 167px;
+    min-height: 60px;
+    border: none;
+
+    &.main-nav__item_logo {
+      min-height: 89px;
+      padding: 0 50px;
+      border-bottom: 1px solid $gray-color-light;
+      background-color: $main-backgound-color;
+      justify-content: flex-start;
+      flex-grow: 1;
+      order: 1;
+    }
+
+    &.main-nav__item_search {
+      min-width: 25px;
+      padding: 0 30px;
+      border-right: 1px solid $gray-color-light;
+      border-left: 1px solid $gray-color-light;
+    }
+
+    &.main-nav__item_cart {
+      padding-left: 30px;
+    }
+
+    &.main-nav__item_delivery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 50px;
+      order: 2;
+    }
+  }
+
+  .main-nav__link {
+    padding: 0;
+
+    &.main-nav__link_cart {
+      padding-left: 55px;
+    }
+  }
+
+  .main-nav__search-text {
+    // visually-hidden
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__menu-list {
+    &.main-nav__menu-list_catalog-and-order {
+      order: 0;
+      border-bottom: 1px solid $gray-color-light;
+      background-color: $main-backgound-color;
+    }
+
+    &.main-nav__menu-list_new-and-sale {
+      display: flex;
+      order: 2;
+    }
+  }
+
+  .main-nav__item {
+    min-width: 184px;
+    padding-left: 30px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &.main-nav__item_search {
+      padding: 0 30px;
+    }
+
+    &.main-nav__item_logo {
+      padding: 0;
+      justify-content: center;
+    }
+
+    &.main-nav__item_catalog {
+      border-right: 1px solid $gray-color-light;
+    }
+  }
 }

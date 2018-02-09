@@ -1,0 +1,55 @@
+.order-form__form-note {
+  margin: 0;
+  margin-bottom: 20px;
+  min-height: 30px;
+
+  @include main-text(14px, 16px);
+}
+
+.order-form__order-button {
+  min-width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__highlighted-container {
+    width: 100%;
+    background-color: $add-backgound-color;
+  }
+
+  .order-form__form-group {
+    margin: 0 auto;
+  }
+
+  .order-form__form-group_doubled {
+    margin-top: -90px;
+  }
+
+  .order-form__button-note-wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-form__form-note {
+    margin: 0;
+    order: 1;
+
+    @include main-text(17px, 30px);
+  }
+
+  .order-form__order-button {
+    min-width: 230px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__button-note-wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+}

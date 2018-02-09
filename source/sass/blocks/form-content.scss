@@ -1,5 +1,7 @@
 .form-content__container {
+  min-width: 260px;
   padding: 30px;
+  padding-bottom: 50px;
 }
 
 .form-content__description {
@@ -9,10 +11,33 @@
   @include main-text(13px, 24px);
 }
 
-.form-content_form-note {
-  @include main-text(14px, 16px);
+@media (min-width: $tablet-width) {
+  .form-content__container {
+    padding: 0;
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .form-content__description {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-bottom: 50px;
+
+    @include main-text(17px, 30px);
+  }
 }
 
-.form-content__order-form {
-  margin-bottom: 30px;
+@media (min-width: $desktop-width) {
+  .form-content__container {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  .form-content__description {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
 }

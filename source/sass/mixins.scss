@@ -1,0 +1,38 @@
+// @include main-text(15px, 30px);
+@mixin main-text($font-size: 15px, $line-height: 30px, $color: #444444) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+// @include stront-text(15px, 30px);
+@mixin strong-text($font-size: 25px, $line-height: 30px, $color: #000000) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin visually-hidden() {
+  // visually-hidden
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

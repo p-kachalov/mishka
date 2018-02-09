@@ -1,15 +1,30 @@
-
 .video-block__wrapper {
   padding: 30px 0;
   border: 1px solid $gray-color-light;
 }
 
 .video-block__title {
-  margin: 0 30px;
-  margin-bottom: 30px;
-  padding-left: 60px;
+  min-height: 50px;
+  margin: 0;
+  padding: 0 30px;
+  padding-left: 90px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-  @include stront-text(17px, 24px);
+  @include strong-text(17px, 24px);
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/icon-video.svg");
+  }
 }
 
 .video-block__video {
@@ -19,13 +34,82 @@
 }
 
 .video-block__description {
-  margin: 0 30px;
+  margin: 0;
+  padding: 0 30px;
   margin-bottom: 30px;
 
   @include main-text(13px, 24px);
 }
 
+.video-block__button-wrapper {
+  padding: 0 30px;
+}
+
 .video-block__button {
-  margin-left: 5px;
-  width: 190px;
+  height: 20px;
+  padding: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-block__wrapper {
+    padding: 0;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-block__title {
+    margin: 0;
+    padding: 0 40px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+    order: 1;
+  }
+
+  .video-block__description {
+    padding: 0 40px;
+    order: 1;
+  }
+
+  .video-block__button-wrapper {
+    padding: 0 40px;
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-block__wrapper {
+    width: 348px;
+    padding: 0;
+    padding-top: 100px;
+    padding-left: 700px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  .video-block__title {
+    width: 160px;
+    padding: 0 60px;
+    margin-bottom: 40px;
+
+    &::before {
+      left: 60px;
+      top: -50px;
+    }
+  }
+
+  .video-block__description {
+    padding: 0 60px;
+    margin-bottom: 40px;
+  }
+
+  .video-block__button-wrapper {
+    padding: 0 60px;
+  }
+
+  .video-block__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }

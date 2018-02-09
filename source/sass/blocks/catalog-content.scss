@@ -1,3 +1,22 @@
 .catalog-content__container {
+  min-width: 260px;
   padding: 30px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-content__container {
+    width: 668px;
+    padding: 50px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-content__container {
+    width: 1050px;
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
 }

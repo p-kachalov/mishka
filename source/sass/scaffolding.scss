@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("OpenSans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"),
+    local("OpenSansBold"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  @include main-text(15px, 30px);
+
+  background-color: $main-backgound-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}

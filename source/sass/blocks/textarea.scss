@@ -1,0 +1,21 @@
+.textarea {
+  padding: 20px;
+  min-width: 216px;
+  border: 2px solid black;
+
+  @include main-text(17px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    min-width: 458px;
+
+    @include main-text(19px, 20px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    width: 700px;
+  }
+}

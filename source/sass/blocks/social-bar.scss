@@ -9,3 +9,23 @@
 .social-bar__item {
   margin: 10px;
 }
+
+.social-bar__link {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.social-bar__link_instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &.social-bar__link_facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &.social-bar__link_twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+}
