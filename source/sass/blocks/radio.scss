@@ -24,15 +24,15 @@
     display: block;
     position: absolute;
     left: 0;
-    background-image: url("../../img/icon-menu-open.svg");
+    border: 2px solid black;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
   }
 }
 
 .radio__input:checked + .radio__label::before {
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../../img/radio-check.svg");
 }
 
 @media (min-width: $tablet-width) {
