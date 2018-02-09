@@ -1,10 +1,50 @@
 .radio {
   min-height: 40px;
+  padding: 15px 0;
+}
+
+.radio__input {
+  @include visually-hidden();
 }
 
 .radio__label {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding-left: 60px;
+  min-height: 40px;
+  position: relative;
 
   @include strong-text(17px, 18px);
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 0;
+    background-image: url("../../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.radio__input:checked + .radio__label::before {
+  background-image: url("../../img/icon-menu-close.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .radio__label {
+    padding-left: 80px;
+    min-height: 50px;
+
+    @include strong-text(19px, 20px);
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }

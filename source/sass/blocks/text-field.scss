@@ -1,10 +1,52 @@
 .text-field {
-  min-height: 40px;
+  padding: 7px 0;
 }
 
 .text-field__label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @include strong-text(17px, 18px);
+}
+
+.text-field__input {
+  display: block;
+  min-height: 40px;
+  min-width: 260px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+
+  @include main-text(17px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .text-field {
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .text-field__label {
+    margin: 0;
+    padding-right: 25px;
+
+    @include strong-text(19px, 20px);
+  }
+
+  .text-field__input {
+    padding: 0 20px;
+    flex-grow: 1;
+
+    @include main-text(19px, 20px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-field {
+    width: 700px;
+  }
 }
