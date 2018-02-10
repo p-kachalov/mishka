@@ -1,9 +1,26 @@
 
 .modal-window {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+.modal-window_shown {
+  display: block;
+}
+
+.modal-window__container {
   width: 260px;
   height: 260px;
   padding: 40px 30px;
   margin: 0 auto;
+  margin-top: 100px;
+  background-color: $main-backgound-color;
   border: 1px solid $gray-color-light;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -29,7 +46,7 @@
   @include main-text(15px, 30px);
 }
 
-.modal-window__button {
+.modal-window__add-button {
   width: 260px;
   min-height: 50px;
   margin: 0 auto;
@@ -62,7 +79,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal-window {
+  .modal-window__container {
     width: 366px;
     height: 260px;
     padding: 40px 100px;

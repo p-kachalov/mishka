@@ -42,6 +42,10 @@
   @include strong-text(15px, 24px);
 }
 
+.product-card__cart-button {
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .product-card {
     width: 668px;

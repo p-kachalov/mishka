@@ -9,4 +9,6 @@
   @include strong-text(17px, 20px);
   color: $gray-color-dark;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
