@@ -31,6 +31,18 @@
   }
 }
 
+.checkbox__label:hover {
+  &::before {
+    border-color: $style-color-light;
+  }
+}
+
+.checkbox__label:active {
+  &::before {
+    border-color: rgba(#000000, 0.3);
+  }
+}
+
 .checkbox__input:checked + .checkbox__label::before {
   background-image: url("../../img/checkbox-check.svg");
   background-size: 40px 40px;

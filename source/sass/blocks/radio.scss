@@ -31,6 +31,18 @@
   }
 }
 
+.radio__label:hover {
+  &::before {
+    border-color: $style-color-light;
+  }
+}
+
+.radio__label:active {
+  &::before {
+    border-color: rgba(#000000, 0.3);
+  }
+}
+
 .radio__input:checked + .radio__label::before {
   background-image: url("../../img/radio-check.svg");
   background-size: 15px 15px;

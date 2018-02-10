@@ -71,7 +71,12 @@
   align-items: center;
   width: 80px;
   height: 50px;
-  border: 2px solid $gray-color-light;
+  border: 2px solid rgba(#000000, 0.1);
+  cursor: pointer;
+}
+
+.modal-window__size-label:hover {
+  border-color: rgba(#000000, 0.3);
 }
 
 .modal-window__size-input:checked + .modal-window__size-label {

@@ -6,6 +6,15 @@
   @include main-text(17px, 18px);
 }
 
+.textarea:hover {
+  border-color: $style-color-light;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: $style-color-light;
+}
+
 @media (min-width: $tablet-width) {
   .textarea {
     min-width: 458px;
