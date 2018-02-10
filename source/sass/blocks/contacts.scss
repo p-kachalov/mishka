@@ -41,6 +41,14 @@
   @include main-text(15px, 30px);
 }
 
+.contacts__email-link:hover {
+  color: $style-color-light;
+}
+
+.contacts__email-link:active {
+  opacity: 0.3;
+}
+
 .contacts__address-value {
   display: block;
 }

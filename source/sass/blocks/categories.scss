@@ -22,8 +22,7 @@
   align-items: center;
   position: relative;
 
-  @include strong-text(19px, 24px);
-  color: #ffffff;
+  @include strong-text(19px, 24px, #ffffff);
   text-align: center;
 
   &.categories__link_interior::after {
@@ -36,6 +35,7 @@
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: center center;
+    opacity: 0.5;
   }
 
   &.categories__link_toy::after {
@@ -48,7 +48,22 @@
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     background-position: center center;
+    opacity: 0.5;
   }
+}
+
+.categories__link:hover {
+  &.categories__link_interior::after {
+    opacity: 0.7;
+  }
+
+  &.categories__link_toy::after {
+    opacity: 0.7;
+  }
+}
+
+.categories__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,6 +77,6 @@
   }
 
   .categories__link {
-    @include strong-text(20px, 30px);
+    @include strong-text(20px, 30px, #ffffff);
   }
 }

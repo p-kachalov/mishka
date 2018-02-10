@@ -9,6 +9,15 @@
 
   background-color: #ffffff;
   border: 1px solid $gray-color-light;
+  cursor: pointer;
+}
+
+.pagination__button:hover {
+  opacity: 0.6;
+}
+
+.pagination__button:active {
+  opacity: 0.3;
 }
 
 .pagination__button_prev {
