@@ -28,6 +28,14 @@
     top: 75px;
   }
 
+  .form-group_doubled {
+    padding-top: 0;
+
+    .form-group__title {
+      top: 20px;
+    }
+  }
+
   .form-group__wrap-container {
     display: flex;
     flex-wrap: wrap;
