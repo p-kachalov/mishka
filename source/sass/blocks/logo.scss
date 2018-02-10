@@ -8,3 +8,13 @@
   display: block;
   margin: auto;
 }
+
+.logo__image_footer:hover {
+  path {
+    fill: $style-color-light;
+  }
+}
+
+.logo__image_footer:active {
+  opacity: 0.3;
+}

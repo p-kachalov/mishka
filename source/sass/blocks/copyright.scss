@@ -3,17 +3,32 @@
   justify-content: center;
 }
 
-.copyright__content {
+.copyright__link {
   @include strong-text(18px, 30px);
+  text-decoration: none;
   display: flex;
   margin: 0;
 }
 
-.copyright__logo {
+.copyright__icon {
   display: block;
-  height: 40px;
-  width: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../img/htmlacademy.svg");
+  height: 35px;
+  width: 30px;
+  margin-left: 20px;
+
+  path {
+    fill: $style-color-light;
+  }
+}
+
+.copyright__link:hover {
+  .copyright__icon {
+    path {
+      fill: #46c1ae;
+    }
+  }
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
