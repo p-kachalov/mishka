@@ -11,12 +11,12 @@
 <body>
   <header class="inner-header">
     <div class="container inner-header__container">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav__closed main-nav_nojs">
         <div class="main-nav__item main-nav__item_logo">
           <a class="logo" href="/">
             <img class="logo__image" src="img/logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина Мишка">
           </a>
-          <button class="main-nav__menu-togler main-nav__menu-togler_close" type="button"></button>
+          <button class="main-nav__menu-togler" type="button"></button>
         </div>
         <ul class="main-nav__menu-list main-nav__menu-list_catalog-and-order">
           <li class="main-nav__item main-nav__item_catalog">
@@ -58,11 +58,15 @@
         <li class="catalog__item">
           <article class="product-card catalog__product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260px" height="200px" alt="Вязанный заяц">
+              <a class="product-card__link" href="/product1">
+                <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260px" height="200px" alt="Вязанный заяц">
+              </a>
             </div>
             <div class="product-card__data-wrapper">
               <div class="product-card__info-wrapper">
-                <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+                <a class="product-card__link" href="/product1">
+                  <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+                </a>
                 <p class="product-card__description">Рост 30 см, вес 200 г</p>
               </div>
               <div class="product-card__buy-wrapper">
@@ -77,11 +81,16 @@
         <li class="catalog__item">
           <article class="product-card catalog__product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260px" height="200px" alt="Маленька вязанная корзина">
+              <a class="product-card__link" href="/product2">
+                <img class="product-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260px" height="200px" alt="Маленька вязанная корзина">
+              </a>
             </div>
             <div class="product-card__data-wrapper">
               <div class="product-card__info-wrapper">
-                <h2 class="product-card__title">Корзинка для белья</h2>
+                <a class="product-card__link" href="/product2">
+                  <h2 class="product-card__title">Корзинка для белья</h2>
+                </a>
+
                 <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
               </div>
               <div class="product-card__buy-wrapper">
@@ -96,11 +105,15 @@
         <li class="catalog__item">
           <article class="product-card catalog__product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/photo-toys-mobile@1x.jpg" width="260px" height="200px" alt="Большая вязанная корзина">
+              <a class="product-card__link" href="/product3">
+                <img class="product-card__image" src="img/photo-toys-mobile@1x.jpg" width="260px" height="200px" alt="Большая вязанная корзина">
+              </a>
             </div>
             <div class="product-card__data-wrapper">
               <div class="product-card__info-wrapper">
-                <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+                <a class="product-card__link" href="/product3">
+                  <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+                </a>
                 <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="product-card__buy-wrapper">
@@ -127,9 +140,23 @@
           </div>
         </div>
       </article>
+      <section class="modal-window">
+        <h2 class="modal-window__title">Добавить в корзину</h2>
+        <p class="modal-window__description">Выберите размер:</p>
+        <div class="modal-window__size-panel">
+          <input class="modal-window__size-input" type="radio" id="size-s" name="size" value="s" checked>
+          <label class="modal-window__size-label" for="size-s">S</label>
+          <input class="modal-window__size-input" type="radio" id="size-m" name="size" value="s" checked>
+          <label class="modal-window__size-label" for="size-m">M</label>
+          <input class="modal-window__size-input" type="radio" id="size-l" name="size" value="s" checked>
+          <label class="modal-window__size-label" for="size-l">L</label>
+        </div>
+        <button class="button modal-window__button" type="button">
+          Добавить
+        </button>
+      </section>
     </div>
   </main>
-
   <footer class="page-footer">
     <div class="container page-footer__container">
       <div class="page-footer__item page-footer__item_logo">
@@ -165,4 +192,6 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
