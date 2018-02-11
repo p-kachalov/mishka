@@ -1,29 +1,12 @@
 
 @media (min-width: $tablet-width) {
-  .wave {
-    height: 0px;
+  .wave-edge {
+    width: 100%;
+    height: 25px;
     position: relative;
+    margin-top: -10px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-size: contain;
   }
-  .wave::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 10px;
-    background-size: 20px 20px;
-    background-image: radial-gradient(circle at 10px -5px, transparent 12px, $main-backgound-color 13px);
-  }
-  .wave::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 15px;
-    background-size: 40px 20px;
-    background-image: radial-gradient(circle at 10px 15px, $main-backgound-color 12px, transparent 13px);
-  }
+
 }
