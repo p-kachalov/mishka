@@ -13,13 +13,14 @@
 }
 
 .front-header__lead {
-  min-height: 225px;
+  min-height: 180px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   margin: 0;
   padding: 30px;
+  padding-top: 70px;
 
   @include strong-text(27px, 30px);
 }

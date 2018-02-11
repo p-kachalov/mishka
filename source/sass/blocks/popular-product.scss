@@ -4,13 +4,13 @@
 }
 
 .popular-product__header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .popular-product__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   @include strong-text(25px, 30px);
 }
@@ -27,7 +27,7 @@
 .popular-product__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   @include main-text(15px, 24px);
 }
@@ -40,11 +40,13 @@
 .popular-product__image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .popular-product__price {
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
 
   @include strong-text(17px, 24px, #444444);
 }

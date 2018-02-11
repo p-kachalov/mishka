@@ -14,16 +14,13 @@
 }
 
 .categories__link {
-  padding: 30px;
+  padding: 28px;
   padding-right: 160px;
   min-height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   position: relative;
 
   @include strong-text(19px, 24px, #ffffff);
-  text-align: center;
 
   &.categories__link_interior::after {
     content: "";

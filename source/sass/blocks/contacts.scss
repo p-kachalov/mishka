@@ -1,5 +1,7 @@
 .contacts__container {
-  padding: 40px 0;
+  padding: 0;
+  padding-top: 85px;
+  padding-bottom: 40px;
 }
 
 .contacts__head-wrapper {
@@ -10,14 +12,14 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include strong-text(18px, 30px);
 }
 
 .contacts__email {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
 
   @include main-text(15px, 30px);
