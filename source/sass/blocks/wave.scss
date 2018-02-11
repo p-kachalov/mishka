@@ -9,4 +9,17 @@
     background-size: contain;
   }
 
+  .wave-line {
+    width: 100%;
+    margin: 0 auto;
+    height: 15px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wave-line {
+    max-width: 1050px;
+  }
 }
