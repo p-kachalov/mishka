@@ -1,6 +1,6 @@
 
 .categories {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -77,5 +77,11 @@
     min-height: 117px;
 
     @include strong-text(20px, 30px, #ffffff);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 1050px;
   }
 }
