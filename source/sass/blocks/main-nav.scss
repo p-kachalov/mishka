@@ -119,6 +119,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
+
   .main-nav__menu-togler {
     display: block;
     width: 25px;
@@ -250,6 +251,12 @@
       border: 0;
     }
   }
+
+  .main-nav__menu-list_catalog-and-order {
+    .main-nav__link {
+      @include strong-text(15px, 24px);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -285,6 +292,18 @@
 
     &.main-nav__item_catalog {
       border-right: 1px solid $gray-color-light;
+    }
+  }
+
+  .main-nav__menu-list_catalog-and-order {
+    .main-nav__link {
+      @include strong-text(17px, 24px);
+    }
+  }
+
+  .main-nav__menu-list_new-and-sale {
+    .main-nav__link {
+      @include strong-text(15px, 24px);
     }
   }
 }

@@ -1,19 +1,21 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__link {
-  @include strong-text(18px, 30px);
+  @include strong-text(19px, 20px);
   text-decoration: none;
   display: flex;
+  align-items: center;
   margin: 0;
 }
 
 .copyright__icon {
   display: block;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   margin-left: 30px;
 
   path {

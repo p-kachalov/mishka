@@ -14,21 +14,23 @@
 }
 
 .categories__link {
-  padding: 28px;
-  padding-right: 160px;
-  min-height: 40px;
-  display: block;
-  position: relative;
+  min-height: 102px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
 
   @include strong-text(19px, 24px, #ffffff);
 
+  .categories__link-text {
+    width: 130px;
+  }
+
   &.categories__link_interior::after {
     content: "";
+    display: block;
     width: 65px;
     height: 65px;
-    position: absolute;
-    right: 30px;
-    top: 20px;
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -37,11 +39,9 @@
 
   &.categories__link_toy::after {
     content: "";
+    display: block;
     width: 65px;
     height: 65px;
-    position: absolute;
-    right: 30px;
-    top: 20px;
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -74,6 +74,7 @@
   }
 
   .categories__link {
+    min-height: 117px;
     @include strong-text(20px, 30px, #ffffff);
   }
 }
