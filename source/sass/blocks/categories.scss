@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  min-width: 320px;
 }
 
 .categories__item {
@@ -65,6 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .categories {
+    width: 668px;
     padding: 0 50px;
     display: flex;
   }

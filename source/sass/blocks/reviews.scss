@@ -29,8 +29,9 @@
     width: 668px;
     min-height: 375px;
     padding: 80px 50px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     background-image: url("../../img/review@1x.jpg");
+    background-size: 350px auto;
     background-repeat: no-repeat;
   }
 
@@ -59,6 +60,14 @@
     position: absolute;
     top: 75px;
     right: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 144dpi),
+  (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+  .reviews__container {
+    background-image: url("../../img/review@2x.jpg");
+    background-size: 350px auto;
   }
 }
 

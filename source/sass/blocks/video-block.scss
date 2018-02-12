@@ -122,6 +122,11 @@
     margin-bottom: 25px;
   }
 
+  .video-block__video {
+    width: 667px;
+    height: 445px;
+  }
+
   .video-block__button-wrapper {
     padding: 0 40px;
     order: 1;
@@ -139,7 +144,7 @@
     padding: 0;
     padding-top: 100px;
     padding-left: 700px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
     position: relative;
   }
 
@@ -170,5 +175,10 @@
     margin: 0;
     width: 682px;
     height: 455px;
+  }
+
+  .video-block__video {
+    width: 681px;
+    height: 445px;
   }
 }

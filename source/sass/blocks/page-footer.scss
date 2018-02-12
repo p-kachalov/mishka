@@ -34,6 +34,10 @@
   .page-footer__item {
     &.page-footer__item_logo {
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 10px;
+      min-width: 190px;
     }
 
     &.page-footer__item_social-bar {
