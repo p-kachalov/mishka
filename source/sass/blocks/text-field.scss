@@ -1,22 +1,22 @@
 .text-field {
-  padding: 7px 0;
+  padding: 5px 0;
   position: relative;
 }
 
 .text-field__label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
   @include strong-text(17px, 18px);
 
   &.text-field__label_icon {
     position: absolute;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     margin: 0;
     padding: 0;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
   }
 }
 
@@ -28,6 +28,8 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
+  margin-bottom: 9px;
   border: none;
   border-bottom: 2px solid black;
   background: transparent;
@@ -54,10 +56,11 @@
 
 @media (min-width: $tablet-width) {
   .text-field {
-    min-height: 50px;
+    padding: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 5px;
   }
 
   .text-field__label {
@@ -68,7 +71,8 @@
   }
 
   .text-field__input {
-    padding: 0 20px;
+    padding: 15px;
+    padding-bottom: 5px;
     flex-grow: 1;
 
     @include main-text(19px, 20px);

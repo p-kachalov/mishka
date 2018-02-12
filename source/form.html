@@ -75,8 +75,8 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="order-form form-content__order-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-group order-form__form-group">
-          <legend class="form-group__title">Тип</legend>
+        <fieldset class="order-form__form-group">
+          <legend class="order-form__form-group-title">Тип</legend>
           <div class="radio">
             <input class="radio__input" type="radio" id="order-type-accessories" name="order-type" value="accessories" checked>
             <label class="radio__label" for="order-type-accessories">Аксессуар для интерьера</label>
@@ -88,9 +88,9 @@
         </fieldset>
 
         <div class="order-form__highlighted-container">
-          <fieldset class="form-group form-group_wrap order-form__form-group">
-            <legend class="form-group__title">Цвет</legend>
-            <div class="form-group__wrap-container">
+          <fieldset class="order-form__form-group">
+            <legend class="order-form__form-group-title">Цвет</legend>
+            <div class="order-form__wrap-container">
               <div class="checkbox">
                 <input class="checkbox__input" type="checkbox" id="order-color-white" name="order-color" value="white" checked>
                 <label class="checkbox__label" for="order-color-white">Белый</label>
@@ -124,8 +124,8 @@
           </fieldset>
         </div>
 
-        <fieldset class="form-group order-form__form-group">
-          <legend class="form-group__title">ФИО</legend>
+        <fieldset class="order-form__form-group">
+          <legend class="order-form__form-group-title">ФИО</legend>
           <div class="text-field">
             <label class="text-field__label" for="user-firstname">Имя:</label>
             <input class="text-field__input" type="text" id="user-firstname" name="user-firstname" placeholder="Введите ваше имя*">
@@ -143,8 +143,8 @@
         </fieldset>
 
         <div class="order-form__highlighted-container">
-          <fieldset class="form-group order-form__form-group">
-            <legend class="form-group__title">Тел</legend>
+          <fieldset class="order-form__form-group order-form__form-group_phone">
+            <legend class="order-form__form-group-title">Тел</legend>
             <div class="text-field">
               <input class="text-field__input" type="tel" id="user-phone" name="user-phone" placeholder="+7 ХХХ ХХ ХХ*">
               <svg class="text-field__label text-field__label_icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -165,8 +165,8 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-group order-form__form-group form-group_doubled">
-            <legend class="form-group__title">E-mail</legend>
+          <fieldset class="order-form__form-group order-form__form-group_mail">
+            <legend class="order-form__form-group-title">E-mail</legend>
             <div class="text-field">
               <input class="text-field__input" type="email" id="user-mail" name="user-mail" placeholder="Ваш Email*">
               <svg class="text-field__label text-field__label_icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -178,9 +178,9 @@
           </fieldset>
         </div>
 
-        <fieldset class="form-group order-form__form-group">
-          <legend class="form-group__title">Доп</legend>
-          <textarea class="textarea" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <fieldset class="order-form__form-group">
+          <legend class="order-form__form-group-title">Доп</legend>
+          <textarea class="textarea" rows="6" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
 
         <div class="order-form__button-note-wrapper" a>

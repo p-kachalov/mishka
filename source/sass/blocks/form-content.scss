@@ -1,12 +1,12 @@
 .form-content__container {
   min-width: 260px;
-  padding: 30px;
-  padding-bottom: 50px;
+  padding: 20px 30px;
+  padding-bottom: 55px;
 }
 
 .form-content__description {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include main-text(13px, 24px);
 }
@@ -14,7 +14,7 @@
 @media (min-width: $tablet-width) {
   .form-content__container {
     padding: 0;
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
 
@@ -22,7 +22,7 @@
     width: 668px;
     margin: 0 auto;
     padding: 0 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     @include main-text(17px, 30px);
   }
@@ -30,7 +30,7 @@
 
 @media (min-width: $desktop-width) {
   .form-content__container {
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 50px;
     margin: 0 auto;
   }
@@ -38,6 +38,6 @@
   .form-content__description {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 7px;
   }
 }
