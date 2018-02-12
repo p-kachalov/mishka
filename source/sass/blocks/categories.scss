@@ -75,6 +75,7 @@
 
   .categories__link {
     min-height: 117px;
+
     @include strong-text(20px, 30px, #ffffff);
   }
 }

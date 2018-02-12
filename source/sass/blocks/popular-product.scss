@@ -87,6 +87,7 @@
 
   .popular-product__description {
     margin-bottom: 35px;
+
     @include main-text(17px, 30px);
   }
 
