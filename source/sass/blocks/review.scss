@@ -5,7 +5,7 @@
 
 .review__content {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
   @include main-text(15px, 30px);
 }
@@ -24,15 +24,19 @@
 
 @media (min-width: $tablet-width) {
   .review__content {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 
     @include main-text(17px, 30px);
+  }
+
+  .review__author-name {
+    @include strong-text(18px, 24px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__content {
     width: 775px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }

@@ -1,0 +1,34 @@
+.wave-line {
+  width: 100%;
+  margin: 0 auto;
+  height: 5px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .wave-edge {
+    width: 100%;
+    height: 25px;
+    position: relative;
+    margin-top: -10px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-size: contain;
+  }
+
+  .wave-line {
+    height: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wave-edge {
+    margin-top: -15px;
+    height: 40px;
+  }
+
+  .wave-line {
+    max-width: 1050px;
+    height: 20px;
+  }
+}

@@ -1,19 +1,36 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.copyright__content {
-  @include strong-text(18px, 30px);
+.copyright__link {
+  @include strong-text(19px, 20px);
+  text-decoration: none;
   display: flex;
+  align-items: center;
   margin: 0;
 }
 
-.copyright__logo {
+.copyright__icon {
   display: block;
-  height: 40px;
-  width: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../img/htmlacademy.svg");
+  height: 35px;
+  width: 35px;
+  margin-left: 30px;
+
+  path {
+    fill: $style-color-light;
+  }
+}
+
+.copyright__link:hover {
+  .copyright__icon {
+    path {
+      fill: #46c1ae;
+    }
+  }
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }

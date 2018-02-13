@@ -1,10 +1,32 @@
 .logo {
   display: flex;
-  width: 100px;
-  height: 50px;
 }
 
 .logo__image {
   display: block;
-  margin: auto;
+}
+
+.logo__image_footer:hover {
+  path {
+    fill: $style-color-light;
+  }
+}
+
+.logo__image_footer:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 115px;
+    height: 50px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 160px;
+    height: 70px;
+  }
 }

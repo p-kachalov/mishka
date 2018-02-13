@@ -1,6 +1,6 @@
 .order-form__form-note {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   min-height: 30px;
 
   @include main-text(14px, 16px);
@@ -11,18 +11,77 @@
   margin: 0 auto;
 }
 
+.order-form__highlighted-container {
+  margin-bottom: 10px;
+}
+
+.order-form__form-group {
+  min-width: 260px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: none;
+  border-top: 1px solid $style-color-light;
+}
+
+.order-form__form-group_phone {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.order-form__form-group_mail {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.order-form__form-group-title {
+  min-width: 60px;
+
+  @include strong-text(17px, 20px, $style-color-light);
+  text-transform: uppercase;
+}
+
 @media (min-width: $tablet-width) {
   .order-form__highlighted-container {
+    margin: 0;
     width: 100%;
     background-color: $add-backgound-color;
   }
 
   .order-form__form-group {
     margin: 0 auto;
+    padding: 39px;
+    padding-left: 210px;
+    width: 501px;
+    border: none;
+    position: relative;
   }
 
-  .order-form__form-group_doubled {
-    margin-top: -90px;
+  .order-form__form-group_phone {
+    padding-left: 200px;
+    padding-bottom: 0;
+
+    .order-form__form-group-title {
+      top: 60px;
+      left: 35px;
+    }
+  }
+
+  .order-form__form-group_mail {
+    padding-left: 200px;
+    padding-top: 0;
+    padding-bottom: 35px;
+
+    .order-form__form-group-title {
+      top: 25px;
+      left: 35px;
+    }
+  }
+
+  .order-form__form-group-title {
+    position: absolute;
+    left: 45px;
+    top: 65px;
   }
 
   .order-form__button-note-wrapper {
@@ -45,11 +104,45 @@
     min-width: 230px;
     margin: 0;
   }
+
+  .order-form__wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .order-form__button-note-wrapper {
     width: 700px;
     margin: 0 auto;
+  }
+
+  .order-form__form-group {
+    padding-left: 220px;
+    width: 875px;
+  }
+
+  .order-form__form-group-title {
+    left: 100px;
+    top: 65px;
+  }
+
+  .order-form__form-group_phone {
+    .order-form__form-group-title {
+      top: 60px;
+      left: 100px;
+    }
+  }
+
+  .order-form__form-group_mail {
+    .order-form__form-group-title {
+      top: 25px;
+      left: 100px;
+    }
+  }
+
+  .order-form__wrap-container {
+    justify-content: flex-start;
   }
 }

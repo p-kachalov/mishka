@@ -1,31 +1,25 @@
 .social-bar__list {
+  min-width: 150px;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.social-bar__item {
-  margin: 10px;
-}
-
-.social-bar__link {
+.social-bar__icon {
   display: block;
-  height: 35px;
-  width: 35px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 30px;
+  width: 25px;
+}
 
-  &.social-bar__link_instagram {
-    background-image: url("../img/icon-insta.svg");
+.social-bar__icon:hover {
+  path {
+    fill: $style-color-light;
   }
+}
 
-  &.social-bar__link_facebook {
-    background-image: url("../img/icon-fb.svg");
-  }
-
-  &.social-bar__link_twitter {
-    background-image: url("../img/icon-twitter.svg");
-  }
+.social-bar__icon:active {
+  opacity: 0.3;
 }

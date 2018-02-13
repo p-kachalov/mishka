@@ -39,6 +39,16 @@
   }
 }
 
+.main-nav__item_logo a[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__link {
   padding-left: 45px;
   position: relative;
@@ -51,26 +61,56 @@
     @include main-text(15px, 24px);
   }
 
-  &.main-nav__link_search::before {
-    content: "";
-    width: 25px;
-    height: 25px;
+  .main-nav__search-icon {
+    width: 20px;
+    height: 20px;
     position: absolute;
     left: 0;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    opacity: 0.2;
   }
 
-  &.main-nav__link_cart::before {
-    content: "";
-    width: 25px;
-    height: 25px;
+  .main-nav__cart-icon {
+    width: 20px;
+    height: 20px;
     position: absolute;
     left: 0;
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    opacity: 0.2;
+  }
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+
+  .main-nav__search-icon {
+    opacity: 1;
+
+    path {
+      fill: $style-color-light;
+    }
+  }
+
+  .main-nav__cart-icon {
+    opacity: 1;
+
+    path {
+      fill: $style-color-light;
+    }
+  }
+}
+
+.main-nav__link:active {
+  color: rgba(#000000, 0.3);
+
+  &.main-nav__link_delivery {
+    color: rgba(#444444, 0.3);
+  }
+
+  .main-nav__search-icon {
+    opacity: 0.3;
+  }
+
+  .main-nav__cart-icon {
+    opacity: 0.3;
   }
 }
 
@@ -80,7 +120,7 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    right: 40px;
+    right: 30px;
     background-color: $main-backgound-color;
     border: none;
     background-image: none;
@@ -118,11 +158,16 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    border-bottom: 1px solid $gray-color-light;
+  }
+
+  .main-nav__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    background-color: transparent;
+    background-color: $main-backgound-color;
+    position: relative;
   }
 
   .main-nav__menu-togler {
@@ -141,8 +186,6 @@
 
     &.main-nav__menu-list_search-and-cart {
       min-height: 89px;
-      border-bottom: 1px solid $gray-color-light;
-      background-color: $main-backgound-color;
     }
   }
 
@@ -155,8 +198,6 @@
     &.main-nav__item_logo {
       min-height: 89px;
       padding: 0 50px;
-      border-bottom: 1px solid $gray-color-light;
-      background-color: $main-backgound-color;
       justify-content: flex-start;
       flex-grow: 1;
       order: 1;
@@ -174,6 +215,9 @@
     }
 
     &.main-nav__item_delivery {
+      position: absolute;
+      right: 0;
+      bottom: -60px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -188,30 +232,51 @@
     &.main-nav__link_cart {
       padding-left: 55px;
     }
+
+    .main-nav__search-icon {
+      position: relative;
+      vertical-align: middle;
+    }
+
+    .main-nav__search-text {
+      // visually-hidden
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+    }
   }
 
-  .main-nav__search-text {
-    // visually-hidden
+  .main-nav__menu-list_catalog-and-order {
     position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
+    left: 0;
+    bottom: -60px;
+
+    .main-nav__link {
+      @include strong-text(15px, 24px);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__container {
+    width: 1150px;
+  }
+
   .main-nav__menu-list {
     &.main-nav__menu-list_catalog-and-order {
+      position: initial;
       order: 0;
-      border-bottom: 1px solid $gray-color-light;
-      background-color: $main-backgound-color;
     }
 
     &.main-nav__menu-list_new-and-sale {
+      position: absolute;
+      left: 0;
+      bottom: -60px;
       display: flex;
       order: 2;
     }
@@ -236,6 +301,20 @@
 
     &.main-nav__item_catalog {
       border-right: 1px solid $gray-color-light;
+    }
+  }
+
+  .main-nav__menu-list_catalog-and-order {
+    padding-right: 0;
+
+    .main-nav__link {
+      @include strong-text(17px, 24px);
+    }
+  }
+
+  .main-nav__menu-list_new-and-sale {
+    .main-nav__link {
+      @include strong-text(15px, 24px);
     }
   }
 }

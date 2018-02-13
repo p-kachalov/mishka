@@ -1,14 +1,24 @@
 .textarea {
-  padding: 20px;
-  min-width: 216px;
+  padding: 15px;
+  min-width: 226px;
   border: 2px solid black;
 
   @include main-text(17px, 18px);
 }
 
+.textarea:hover {
+  border-color: $style-color-light;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: $style-color-light;
+}
+
 @media (min-width: $tablet-width) {
   .textarea {
     min-width: 458px;
+    rows: 5;
 
     @include main-text(19px, 20px);
   }
