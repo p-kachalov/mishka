@@ -7,9 +7,7 @@
 }
 
 .logo__image_footer:hover {
-  path {
-    fill: $style-color-light;
-  }
+  fill: $style-color-light;
 }
 
 .logo__image_footer:active {
@@ -22,7 +20,6 @@
     height: 50px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .logo__image {

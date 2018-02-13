@@ -79,39 +79,23 @@
 }
 
 .main-nav__link:hover {
-  opacity: 0.6;
+  .main-nav__link-text {
+    opacity: 0.6;
+  }
 
   .main-nav__search-icon {
     opacity: 1;
-
-    path {
-      fill: $style-color-light;
-    }
+    fill: $style-color-light;
   }
 
   .main-nav__cart-icon {
     opacity: 1;
-
-    path {
-      fill: $style-color-light;
-    }
+    fill: $style-color-light;
   }
 }
 
 .main-nav__link:active {
-  color: rgba(#000000, 0.3);
-
-  &.main-nav__link_delivery {
-    color: rgba(#444444, 0.3);
-  }
-
-  .main-nav__search-icon {
-    opacity: 0.3;
-  }
-
-  .main-nav__cart-icon {
-    opacity: 0.3;
-  }
+  opacity: 0.3;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -238,7 +222,7 @@
       vertical-align: middle;
     }
 
-    .main-nav__search-text {
+    .main-nav__link-text_search {
       // visually-hidden
       position: absolute;
       overflow: hidden;
