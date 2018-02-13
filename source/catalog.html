@@ -73,8 +73,8 @@
           </ul>
           <ul class="main-nav__menu-list main-nav__menu-list_search-and-cart">
             <li class="main-nav__item main-nav__item_search">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__search-icon" width="20" height="20">
+              <a class="main-nav__link" href="#" aria-label="Поиск">
+                <svg class="main-nav__search-icon" width="20" height="20" role="img">
                   <use xlink:href="#search-icon"></use>
                 </svg>
                 <span class="main-nav__link-text main-nav__link-text_search">Поиск по сайту</span>
@@ -82,7 +82,7 @@
             </li>
             <li class="main-nav__item main-nav__item_cart">
               <a class="main-nav__link main-nav__link_cart" href="#">
-                <svg class="main-nav__cart-icon" width="20" height="20">
+                <svg class="main-nav__cart-icon" width="20" height="20" aria-hidden="true" role="presentation">
                   <use xlink:href="#cart-icon"></use>
                 </svg>
                 <span class="main-nav__link-text">Корзина: пока пуста</span>
@@ -139,8 +139,8 @@
               </div>
               <div class="product-card__buy-wrapper">
                 <p class="product-card__price">1 200 руб.</p>
-                <a class="product-card__cart-button">
-                  <svg class="product-card__cart-image" width="20" height="19">
+                <a class="product-card__cart-button" aria-label="Добавить в корзину">
+                  <svg class="product-card__cart-image" width="20" height="19" role="img">
                     <use xlink:href="#cart-icon"></use>
                   </svg>
                   <samp class="visually-hidden">Добавить в корзину</samp>
@@ -170,8 +170,8 @@
               </div>
               <div class="product-card__buy-wrapper">
                 <p class="product-card__price">690 руб.</p>
-                <a class="cart-button product-card__cart-button">
-                    <svg class="product-card__cart-image" width="20" height="19">
+                <a class="cart-button product-card__cart-button" aria-label="Добавить в корзину">
+                    <svg class="product-card__cart-image" width="20" height="19" role="img">
                       <use xlink:href="#cart-icon"></use>
                     </svg>
                   <samp class="visually-hidden">Добавить в корзину</samp>
@@ -201,8 +201,8 @@
               </div>
               <div class="product-card__buy-wrapper">
                 <p class="product-card__price">1 500 руб.</p>
-                <a class="product-card__cart-button">
-                    <svg class="product-card__cart-image" width="20" height="19">
+                <a class="product-card__cart-button" aria-label="Добавить в корзину">
+                    <svg class="product-card__cart-image" width="20" height="19" role="img">
                       <use xlink:href="#cart-icon"></use>
                     </svg>
                   <samp class="visually-hidden">Добавить в корзину</samp>
@@ -257,7 +257,7 @@
     <div class="container page-footer__container">
       <div class="page-footer__item page-footer__item_logo">
         <a class="logo">
-          <svg class="logo__image_footer" width="102" height="34">
+          <svg class="logo__image_footer" width="102" height="34" aria-hidden="true" role="presentation">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
@@ -265,25 +265,25 @@
       <div class="social-bar page-footer__item page-footer__item_social-bar">
         <ul class="social-bar__list">
           <li class="social-bar__item">
-            <a class="social-bar__link" href="https://www.instagram.com">
+            <a class="social-bar__link" href="https://www.instagram.com" aria-label="Переход на сайт Instagram">
               <span class="visually-hidden">Instagram</span>
-              <svg class="social-bar__icon" width="22" height="22">
+              <svg class="social-bar__icon" width="22" height="22" role="img">
                 <use xlink:href="#logo-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-bar__item">
-            <a class="social-bar__link" href="https://www.facebook.com">
+            <a class="social-bar__link" href="https://www.facebook.com" aria-label="Переход на сайт Facebook">
               <span class="visually-hidden">Facebook</span>
-              <svg class="social-bar__icon" width="15" height="28">
+              <svg class="social-bar__icon" width="15" height="28" role="img">
                 <use xlink:href="#logo-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-bar__item">
-            <a class="social-bar__link" href="https://twitter.com">
+            <a class="social-bar__link" href="https://twitter.com" aria-label="Переход на сайт Twitter">
               <span class="visually-hidden">Twitter</span>
-              <svg class="social-bar__icon" width="23" height="20">
+              <svg class="social-bar__icon" width="23" height="20" role="img">
                 <use xlink:href="#logo-twitter"></use>
               </svg>
             </a>
@@ -291,10 +291,10 @@
         </ul>
       </div>
       <div class="copyright page-footer__item">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт html Academy">
           Разработано
           <span class="visually-hidden">html Academy</span>
-          <svg class="copyright__icon" width="27" height="35">
+          <svg class="copyright__icon" width="27" height="35" role="img">
             <use xlink:href="#copyright-icon"></use>
           </svg>
         </a>
