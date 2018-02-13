@@ -75,10 +75,7 @@
 .product-card__cart-button:hover {
   .product-card__cart-image {
     opacity: 1;
-
-    path {
-      fill: $style-color-light;
-    }
+    fill: $style-color-light;
   }
 }
 

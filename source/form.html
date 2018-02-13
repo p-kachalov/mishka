@@ -38,6 +38,16 @@
       <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"
       />
     </symbol>
+    <symbol id="phone-icon">
+      <path d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z"
+      />
+      <path d="M12.529 9.327v1.552a1.42 1.42 0 0 1 1.421 1.42h1.553a2.973 2.973 0 0 0-2.974-2.972zM12.529 6.246a6.054 6.054 0 0 1 6.056 6.054h1.588a7.642 7.642 0 0 0-7.644-7.641v1.587z"
+      />
+    </symbol>
+    <symbol id="mail-icon">
+      <path d="M28 5H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 0 0 3.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"
+      />
+    </symbol>
   </svg>
 
   <header class="inner-header">
@@ -68,8 +78,8 @@
           </ul>
           <ul class="main-nav__menu-list main-nav__menu-list_search-and-cart">
             <li class="main-nav__item main-nav__item_search">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__search-icon" width="20" height="20">
+              <a class="main-nav__link" href="#" aria-label="Поиск">
+                <svg class="main-nav__search-icon" width="20" height="20" role="img">
                   <use xlink:href="#search-icon"></use>
                 </svg>
                 <span class="main-nav__link-text main-nav__link-text_search">Поиск по сайту</span>
@@ -77,7 +87,7 @@
             </li>
             <li class="main-nav__item main-nav__item_cart">
               <a class="main-nav__link main-nav__link_cart" href="#">
-                <svg class="main-nav__cart-icon" width="20" height="20">
+                <svg class="main-nav__cart-icon" width="20" height="20" aria-hidden="true" role="presentation">
                   <use xlink:href="#cart-icon"></use>
                 </svg>
                 <span class="main-nav__link-text">Корзина: пока пуста</span>
@@ -186,20 +196,8 @@
             <legend class="order-form__form-group-title">Тел</legend>
             <div class="text-field">
               <input class="text-field__input" type="tel" id="user-phone" name="user-phone" placeholder="+7 ХХХ ХХ ХХ*">
-              <svg class="text-field__label text-field__label_icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333"
-                xml:space="preserve">
-                <g>
-                  <g id="UrwUhy_2_">
-                    <g>
-                      <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"
-                      />
-                    </g>
-                  </g>
-                  <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z" />
-                  <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z" />
-                  <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z" />
-                </g>
+              <svg class="text-field__label text-field__label_icon" width="25" height="24" aria-hidden="true" role="presentation">
+                <use xlink:href="#phone-icon"></use>
               </svg>
             </div>
           </fieldset>
@@ -208,10 +206,8 @@
             <legend class="order-form__form-group-title">E-mail</legend>
             <div class="text-field">
               <input class="text-field__input" type="email" id="user-mail" name="user-mail" placeholder="Ваш Email*">
-              <svg class="text-field__label text-field__label_icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                <path id="mail" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"
-                />
+              <svg class="text-field__label text-field__label_icon" width="32" height="32" aria-hidden="true" role="presentation">
+                <use xlink:href="#mail-icon"></use>
               </svg>
             </div>
           </fieldset>
@@ -234,7 +230,7 @@
     <div class="container page-footer__container">
       <div class="page-footer__item page-footer__item_logo">
         <a class="logo">
-          <svg class="logo__image_footer" width="102" height="34">
+          <svg class="logo__image_footer" width="102" height="34" aria-hidden="true" role="presentation">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
@@ -242,25 +238,25 @@
       <div class="social-bar page-footer__item page-footer__item_social-bar">
         <ul class="social-bar__list">
           <li class="social-bar__item">
-            <a class="social-bar__link" href="https://www.instagram.com">
+            <a class="social-bar__link" href="https://www.instagram.com" aria-label="Переход на сайт Instagram">
               <span class="visually-hidden">Instagram</span>
-              <svg class="social-bar__icon" width="22" height="22">
+              <svg class="social-bar__icon" width="22" height="22" role="img">
                 <use xlink:href="#logo-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-bar__item">
-            <a class="social-bar__link" href="https://www.facebook.com">
+            <a class="social-bar__link" href="https://www.facebook.com" aria-label="Переход на сайт Facebook">
               <span class="visually-hidden">Facebook</span>
-              <svg class="social-bar__icon" width="15" height="28">
+              <svg class="social-bar__icon" width="15" height="28" role="img">
                 <use xlink:href="#logo-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-bar__item">
-            <a class="social-bar__link" href="https://twitter.com">
+            <a class="social-bar__link" href="https://twitter.com" aria-label="Переход на сайт Twitter">
               <span class="visually-hidden">Twitter</span>
-              <svg class="social-bar__icon" width="23" height="20">
+              <svg class="social-bar__icon" width="23" height="20" role="img">
                 <use xlink:href="#logo-twitter"></use>
               </svg>
             </a>
@@ -268,10 +264,10 @@
         </ul>
       </div>
       <div class="copyright page-footer__item">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт html Academy">
           Разработано
           <span class="visually-hidden">html Academy</span>
-          <svg class="copyright__icon" width="27" height="35">
+          <svg class="copyright__icon" width="27" height="35" role="img">
             <use xlink:href="#copyright-icon"></use>
           </svg>
         </a>
