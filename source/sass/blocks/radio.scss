@@ -29,6 +29,7 @@
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: transparent;
   }
 }
 
@@ -45,7 +46,8 @@
 }
 
 .radio__input:checked + .radio__label::before {
-  background-image: url("../../img/radio-check.svg");
+  display: block;
+  background-image: url("../img/radio-check.svg");
   background-size: 15px 15px;
 }
 

@@ -23,14 +23,14 @@
 @media (max-width: $mobile-width-only) and (min-resolution: 144dpi),
   (max-width: $mobile-width-only) and (min-resolution: 1.5dppx) {
   .front-header {
-    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
     background-size: auto 380px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .front-header {
-    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-size: auto 750px;
     background-position: center 85px;
   }
@@ -49,14 +49,14 @@
 @media (min-width: $tablet-width) and (min-resolution: 144dpi),
   (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
   .front-header {
-    background-image: url("../../img/hero-tablet@2x.jpg");
+    background-image: url("../img/hero-tablet@2x.jpg");
     background-size: auto 750px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .front-header {
-    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   .front-header__lead {
@@ -69,6 +69,6 @@
 @media (min-width: $desktop-width) and (min-resolution: 144dpi),
   (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .front-header {
-    background-image: url("../../img/hero-desktop@2x.jpg");
+    background-image: url("../img/hero-desktop@2x.jpg");
   }
 }
