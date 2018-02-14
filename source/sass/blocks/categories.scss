@@ -15,10 +15,10 @@
 }
 
 .categories__link {
-  min-height: 102px;
+  min-height: 72px;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 15px 30px;
   align-items: center;
 
   @include strong-text(19px, 24px, #ffffff);
@@ -71,6 +71,7 @@
 
   .categories__link {
     min-height: 117px;
+    padding: 0;
     padding-left: 35px;
     padding-right: 25px;
 
