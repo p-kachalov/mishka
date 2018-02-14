@@ -12,12 +12,14 @@
 
 .review__author-name {
   margin: 0;
+  display: block;
 
   @include strong-text(17px, 24px);
 }
 
 .review__author-nickname {
   margin: 0;
+  display: block;
 
   @include main-text(17px, 30px);
 }
