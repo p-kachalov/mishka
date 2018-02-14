@@ -92,20 +92,21 @@
 
 @media (min-width: $tablet-width) {
   .contacts__container {
-    padding: 50px 0;
-    min-height: 830px;
+    padding: 0;
+    padding-top: 62px;
+    min-height: 865px;
     width: 768px;
   }
 
   .contacts__head-wrapper {
     width: 668px;
     padding: 0 50px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .contacts__title {
     position: relative;
-    margin-top: 10px;
+    margin-left: -5px;
     margin-bottom: 50px;
 
     @include strong-text(43px, 50px);
@@ -159,6 +160,7 @@
 
   .contacts__map-frame {
     width: 768px;
+    height: 455px;
   }
 }
 
@@ -175,7 +177,7 @@
     width: 875px;
     padding: 50px;
     padding-left: 220px;
-    padding-top: 135px;
+    padding-top: 140px;
     min-height: 450px;
     position: relative;
   }

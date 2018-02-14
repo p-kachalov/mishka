@@ -72,3 +72,9 @@
     background-size: 35px 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 265px;
+  }
+}

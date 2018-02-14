@@ -13,12 +13,13 @@
 @media (min-width: $tablet-width) {
   .about__container {
     padding: 50px;
+    padding-bottom: 60px;
     width: 668px;
   }
 
   .about__title {
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-left: -5px;
+    margin-bottom: 19px;
 
     @include strong-text(43px, 50px);
   }
@@ -27,6 +28,7 @@
 @media (min-width: $desktop-width) {
   .about__container {
     padding: 50px 225px;
+    min-height: 560px;
     width: 700px;
   }
 

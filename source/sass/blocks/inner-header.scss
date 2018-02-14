@@ -11,7 +11,7 @@
 
 .inner-header__title {
   min-width: 240px;
-  min-height: 120px;
+  min-height: 115px;
   padding: 30px;
   margin: 0;
   display: flex;
@@ -23,9 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .inner-header__title {
-    min-height: 100px;
+    min-height: 98px;
     align-items: flex-start;
-    padding-top: 90px;
+    padding-top: 95px;
 
     @include strong-text(43px, 50px);
   }

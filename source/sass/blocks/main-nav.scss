@@ -168,7 +168,7 @@
       background: transparent;
       position: absolute;
       left: 0;
-      bottom: -60px;
+      bottom: -62px;
 
       .main-nav__link {
         @include strong-text(15px, 24px);
@@ -199,7 +199,7 @@
     }
 
     &_search {
-      min-width: 87px;
+      min-width: 82px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -208,13 +208,13 @@
     }
 
     &_cart {
-      padding-left: 30px;
+      padding-left: 28px;
     }
 
     &_delivery {
       position: absolute;
       right: 0;
-      bottom: -60px;
+      bottom: -62px;
       display: flex;
       justify-content: center;
       align-items: center;
