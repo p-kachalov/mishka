@@ -14,11 +14,11 @@
   justify-content: center;
   align-items: center;
 
-  &.page-footer__item_logo {
+  &_logo {
     display: none;
   }
 
-  &.page-footer__item_social-bar {
+  &_social-bar {
     border-bottom: 1px solid #e5e5e5;
   }
 }
@@ -32,7 +32,7 @@
   }
 
   .page-footer__item {
-    &.page-footer__item_logo {
+    &_logo {
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -40,7 +40,7 @@
       min-width: 190px;
     }
 
-    &.page-footer__item_social-bar {
+    &_social-bar {
       border: none;
     }
   }

@@ -27,7 +27,7 @@
     width: 130px;
   }
 
-  &.categories__link_interior::after {
+  &_interior::after {
     content: "";
     display: block;
     width: 65px;
@@ -38,7 +38,7 @@
     opacity: 0.5;
   }
 
-  &.categories__link_toy::after {
+  &_toy::after {
     content: "";
     display: block;
     width: 65px;
@@ -51,13 +51,7 @@
 }
 
 .categories__link:hover {
-  &.categories__link_interior::after {
-    opacity: 0.7;
-  }
-
-  &.categories__link_toy::after {
-    opacity: 0.7;
-  }
+  opacity: 0.7;
 }
 
 .categories__link:active {

@@ -9,7 +9,7 @@
 
   @include strong-text(17px, 18px);
 
-  &.text-field__label_icon {
+  &_icon {
     position: absolute;
     height: 30px;
     width: 40px;
@@ -68,6 +68,10 @@
     padding-right: 25px;
 
     @include strong-text(19px, 20px);
+
+    &_icon {
+      padding: 0;
+    }
   }
 
   .text-field__input {
