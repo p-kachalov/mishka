@@ -22,6 +22,9 @@
 }
 
 .product-card__link {
+  margin: 0;
+  padding: 0;
+  display: block;
   text-decoration: none;
 }
 
@@ -51,8 +54,7 @@
 .product-card__image {
   width: 260px;
   height: 200px;
-  overflow: hidden;
-  margin-bottom: -5px;
+  background-color: #e5e4e2;
 }
 
 .product-card__price {
