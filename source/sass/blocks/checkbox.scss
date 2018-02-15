@@ -44,7 +44,7 @@
 }
 
 .checkbox__input:checked + .checkbox__label::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-size: 25px 25px;
 }
 
@@ -70,5 +70,11 @@
 
   .checkbox__input:checked + .checkbox__label::before {
     background-size: 35px 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 265px;
   }
 }

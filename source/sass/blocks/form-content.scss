@@ -1,12 +1,13 @@
 .form-content__container {
   min-width: 260px;
-  padding: 20px 30px;
+  padding: 0 30px;
+  padding-top: 25px;
   padding-bottom: 55px;
 }
 
 .form-content__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   @include main-text(13px, 24px);
 }
@@ -14,7 +15,7 @@
 @media (min-width: $tablet-width) {
   .form-content__container {
     padding: 0;
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 50px;
   }
 
@@ -22,7 +23,7 @@
     width: 668px;
     margin: 0 auto;
     padding: 0 50px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 
     @include main-text(17px, 30px);
   }

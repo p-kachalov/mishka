@@ -36,9 +36,11 @@ for (var i = 0; i < cartButtons.length; i++) {
   });
 }
 
-modalAddButton.addEventListener("click", function() {
-  modalWindow.classList.remove("modal-window_shown");
-});
+if (modalAddButton) {
+  modalAddButton.addEventListener("click", function() {
+    modalWindow.classList.remove("modal-window_shown");
+  });
+}
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {

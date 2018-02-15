@@ -62,7 +62,8 @@
   height: 450px;
   margin: 0 auto;
   margin-bottom: 44px;
-  background-image: url("../../img/map-mobile@1x.jpg");
+  background-color: #dfdfdf;
+  background-image: url("../img/map-mobile@1x.jpg");
   background-size: 320px auto;
   background-repeat: no-repeat;
   background-position: center center;
@@ -84,33 +85,34 @@
 @media (max-width: $mobile-width-only) and (min-resolution: 144dpi),
   (max-width: $mobile-width-only) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../../img/map-mobile@2x.jpg");
+    background-image: url("../img/map-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts__container {
-    padding: 50px 0;
-    min-height: 830px;
+    padding: 0;
+    padding-top: 62px;
+    min-height: 865px;
     width: 768px;
   }
 
   .contacts__head-wrapper {
     width: 668px;
     padding: 0 50px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .contacts__title {
     position: relative;
-    margin-top: 10px;
+    margin-left: -5px;
     margin-bottom: 50px;
 
     @include strong-text(43px, 50px);
 
     &::after {
-      content: url("../../img/icon-flag.svg");
+      content: url("../img/icon-flag.svg");
       position: absolute;
       right: -5px;
       bottom: -25px;
@@ -152,19 +154,20 @@
   .contacts__map {
     width: 768px;
     margin-bottom: 60px;
-    background-image: url("../../img/map-tablet@1x.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
     background-size: 768px auto;
   }
 
   .contacts__map-frame {
     width: 768px;
+    height: 455px;
   }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: 144dpi),
   (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../../img/map-tablet@2x.jpg");
+    background-image: url("../img/map-tablet@2x.jpg");
     background-size: 768px auto;
   }
 }
@@ -174,7 +177,7 @@
     width: 875px;
     padding: 50px;
     padding-left: 220px;
-    padding-top: 135px;
+    padding-top: 140px;
     min-height: 450px;
     position: relative;
   }
@@ -220,7 +223,7 @@
     top: 75px;
     margin: 0;
     width: 525px;
-    background-image: url("../../img/map-desktop@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
     background-size: 525px auto;
   }
 
@@ -232,7 +235,7 @@
 @media (min-width: $desktop-width) and (min-resolution: 144dpi),
   (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../../img/map-desktop@2x.jpg");
+    background-image: url("../img/map-desktop@2x.jpg");
     background-size: 525px auto;
   }
 }

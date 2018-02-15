@@ -22,27 +22,27 @@
     background-position: center center;
   }
 
-  &.advantages__item_flower::before {
+  &_flower::before {
     background-image: url("../img/icon-feature-flower.svg");
   }
 
-  &.advantages__item_money::before {
+  &_money::before {
     background-image: url("../img/icon-feature-money.svg");
   }
 
-  &.advantages__item_heart::before {
+  &_heart::before {
     background-image: url("../img/icon-feature-heart.svg");
   }
 
-  &.advantages__item_ball::before {
+  &_ball::before {
     background-image: url("../img/icon-feature-ball.svg");
   }
 
-  &.advantages__item_rocket::before {
+  &_rocket::before {
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
-  &.advantages__item_gift::before {
+  &_gift::before {
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
@@ -55,25 +55,25 @@
   }
 
   .advantages__item {
-    width: 330px;
+    width: 332px;
 
     margin: 25px 0;
 
     @include strong-text(20px, 22px);
 
-    &.advantages__item_money {
+    &_money {
       order: 1;
     }
 
-    &.advantages__item_rocket {
+    &_rocket {
       order: 1;
     }
 
-    &.advantages__item_heart {
+    &_heart {
       order: 2;
     }
 
-    &.advantages__item_gift {
+    &_gift {
       order: 2;
     }
   }

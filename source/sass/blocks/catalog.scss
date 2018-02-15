@@ -14,7 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__item {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -22,5 +22,9 @@
   .catalog {
     display: flex;
     justify-content: space-between;
+  }
+
+  .catalog__item {
+    margin-bottom: 55px;
   }
 }
