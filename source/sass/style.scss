@@ -1,7 +1,9 @@
 
+@import "fonts";
 @import "variables";
 @import "mixins";
 @import "scaffolding";
+@import "blocks/main-content";
 @import "blocks/logo";
 @import "blocks/button";
 @import "blocks/main-nav";
@@ -30,4 +32,3 @@
 @import "blocks/text-field";
 @import "blocks/textarea";
 @import "blocks/modal-window";
-@import "blocks/wave";
