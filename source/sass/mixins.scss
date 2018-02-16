@@ -36,3 +36,18 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin wave-line($height: 5px) {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  height: $height;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+}
