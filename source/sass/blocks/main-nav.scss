@@ -168,9 +168,12 @@
       background: transparent;
       position: absolute;
       left: 0;
-      top: 90px;
+      bottom: -60px;
 
       .main-nav__link {
+        position: absolute;
+        top: 0;
+        max-width: 180px;
         @include strong-text(15px, 24px);
       }
     }
@@ -215,12 +218,18 @@
     &_delivery {
       position: absolute;
       right: 0;
-      top: 90px;
+      bottom: -60px;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0 50px;
       order: 2;
+
+      .main-nav__link {
+        position: absolute;
+        top: 0;
+        max-width: 2400px;
+      }
     }
   }
 
@@ -262,6 +271,7 @@
       padding-right: 0;
 
       .main-nav__link {
+        position: static;
         @include strong-text(17px, 24px);
       }
     }
@@ -269,11 +279,14 @@
     &_new-and-sale {
       position: absolute;
       left: 0;
-      top: 90px;
+      bottom: -60px;
       display: flex;
       order: 2;
 
       .main-nav__link {
+        position: absolute;
+        top: 0;
+        max-width: 180px;
         @include strong-text(15px, 24px);
       }
     }
