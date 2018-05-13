@@ -9,7 +9,7 @@ notifications:
 script: gulp build
 
 local-dir:
-  "build"
+  build
 
 deploy:
   provider: pages
