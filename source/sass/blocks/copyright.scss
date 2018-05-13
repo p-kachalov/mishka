@@ -1,0 +1,33 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__link {
+  @include strong-text(19px, 20px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.copyright__icon {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin-left: 30px;
+
+  fill: $style-color-light;
+}
+
+.copyright__link:hover {
+  .copyright__icon {
+    fill: #46c1ae;
+  }
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

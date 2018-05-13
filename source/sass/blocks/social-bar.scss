@@ -1,0 +1,23 @@
+.social-bar__list {
+  min-width: 145px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-bar__icon {
+  display: block;
+  height: 30px;
+  width: 25px;
+}
+
+.social-bar__icon:hover {
+  fill: $style-color-light;
+}
+
+.social-bar__icon:active {
+  opacity: 0.3;
+}

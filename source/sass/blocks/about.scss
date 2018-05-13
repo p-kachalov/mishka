@@ -1,0 +1,42 @@
+.about__container {
+  min-width: 260px;
+  padding: 30px;
+}
+
+.about__title {
+  margin: 0;
+  padding: 0;
+
+  @include strong-text(25px, 30px);
+}
+
+@media (min-width: $tablet-width) {
+  .about__container {
+    padding: 50px;
+    padding-bottom: 60px;
+    width: 668px;
+  }
+
+  .about__title {
+    margin-left: -5px;
+    margin-bottom: 19px;
+
+    @include strong-text(43px, 50px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding: 50px 225px;
+    min-height: 560px;
+    width: 700px;
+  }
+
+  .about__title {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    margin-left: -5px; // pixel perfect
+
+    @include strong-text(53px, 57px);
+  }
+}
