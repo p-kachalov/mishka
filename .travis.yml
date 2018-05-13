@@ -6,6 +6,12 @@ node_js:
 notifications:
   email: false
 
+script:
+  - "npm run build"
+
+local-dir:
+  "build"
+
 deploy:
   provider: pages
   skip-cleanup: true
