@@ -8,6 +8,7 @@
 ---
 
 Зачетный проект продвинутого интенсива [htmlAcademy](https://htmlacademy.ru/intensive/adaptive)
+
 _(Адаптивная, семантичная, доступная верстка с ретинизацией и привкусом БЭМ)_
 
 * Студент: [Павел Качалов](https://htmlacademy.ru/profile/pavel-k).
