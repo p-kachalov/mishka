@@ -1,4 +1,5 @@
-# «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# «Мишка»
+[![Build Status](https://travis-ci.org/p-kachalov/235268-mishka.svg?branch=master)](https://travis-ci.org/p-kachalov/235268-mishka)
 
 - [Главная](https://p-kachalov.github.io/235268-mishka/index.html)
 - [Каталог](https://p-kachalov.github.io/235268-mishka/catalog.html)
